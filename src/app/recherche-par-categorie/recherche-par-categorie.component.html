@@ -3,7 +3,7 @@
 <div class="container">
     <div class="col-sm-4 col-md-4 col-lg mb-4">
         <label>Categorie</label>
-        <select class="form-controler form-controler-lg" id="idcat" name="idCat" [(ngModel)]="IdCategorie" (change)="onchange()">
+        <select class="form-control form-control-lg" id="idcat" name="idCat" [(ngModel)]="IdCategorie" (change)="onchange()">
         <option *ngFor="let cat of categories" value="{{cat.idCat}}">{{cat.nomCat}}</option>
         </select>
     </div>
